@@ -19,6 +19,7 @@
 	</properties>
 
 	<build>
+		<outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -43,6 +44,11 @@
 						</resource>
 					</webResources>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>${appengine-maven-plugin-version}</version>
 			</plugin>
 		</plugins>
 	</build>
