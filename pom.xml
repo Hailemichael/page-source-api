@@ -20,7 +20,7 @@
 
 	<build>
 		<outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory>
-		<plugins><!-- 
+		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
@@ -28,7 +28,7 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-			</plugin> -->
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
@@ -44,11 +44,6 @@
 						</resource>
 					</webResources>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>appengine-maven-plugin</artifactId>
-				<version>${appengine-maven-plugin-version}</version>
 			</plugin>
 		</plugins>
 	</build>
@@ -97,11 +92,6 @@
 			<groupId>com.github.detro.ghostdriver</groupId>
 			<artifactId>phantomjsdriver</artifactId>
 			<version>1.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-1.0-sdk</artifactId>
-			<version>${appengine.target.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
